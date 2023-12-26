@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/results.css') }}">
+</head>
+<body>
+    
+    <h1 className="Title">Health Insurance Cost Predicton</h1>
+    
+    <h2 class="card">Your Predicted Health Insurance Annual Cost is:&nbsp&nbsp{{predict}} </h2> 
+        <!-- <h2> </h2> -->
+
+<div class="test">
+    <div class="card">
+        <h3>Profile:</h3>
+        <body>
+            <br>Age: {{age}}</br>
+            <br>Sex: {{sex}}</br>
+            <br>BMI: {{bmi}}</br>
+            <br># of Children: {{children}}</br>
+            <br>Smoker: {{smoker}}</br>
+            <br>US region: {{region}}</br>
+        </body>
+    </div>
+    <div class="card">
+    <h3>InsuranceBot's Explaination:<h3>
+        <body> {{aiResponse}}</body>
+    </div>
+
+</div>
+</body>
+</html>
+
